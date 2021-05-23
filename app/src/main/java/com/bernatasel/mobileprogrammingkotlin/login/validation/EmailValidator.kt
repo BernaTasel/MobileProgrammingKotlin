@@ -5,7 +5,8 @@ import com.bernatasel.mobileprogrammingkotlin.login.validation.Validator
 
 
 class EmailValidator : Validator {
-    override fun validate(field: String) = when {
+    override fun validate(field: String?) = when {
+        field.isNullOrBlank() -> R.string.email_is_required
         field.isEmpty() -> R.string.email_is_required
         !field.contains("@") -> R.string.email_is_invalid
         !field.contains(".") -> R.string.email_is_invalid

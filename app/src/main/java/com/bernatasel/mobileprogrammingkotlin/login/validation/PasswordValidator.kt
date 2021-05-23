@@ -5,7 +5,8 @@ import com.bernatasel.mobileprogrammingkotlin.login.validation.Validator
 
 
 class PasswordValidator : Validator {
-    override fun validate(field: String) = when {
+    override fun validate(field: String?) = when {
+        field.isNullOrBlank() -> R.string.password_is_required
         field.isEmpty() -> R.string.password_is_required
         else -> null
     }
