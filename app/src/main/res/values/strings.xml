@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MobileProgrammingKotlin</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="log_in">Giriş Yap</string>
+    <string name="create_an_account">Hesap Oluştur</string>
+    <string name="this_field_is_required">Bu alanın doldurulması gerekiyor</string>
+    <string name="email_is_required">E-posta alanı gerekli</string>
+    <string name="email_is_invalid">E-posta geçerli değil</string>
+    <string name="password_is_required">Şifre gerekli</string>
+    <string name="password_must_contain">Şifre en az 1 sayı, bir küçük harf, bir büyük harf ve bir özel karakter içermelidir</string>
+    <string name="password_is_too_short">Şifre çok kısa</string>
+    <string name="password_is_too_long">Şifre çok uzun</string>
 </resources>
