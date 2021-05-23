@@ -1,5 +1,6 @@
 package com.bernatasel.mobileprogrammingkotlin.login
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.bernatasel.mobileprogrammingkotlin.infra.BaseViewModel
@@ -22,7 +23,8 @@ class LoginViewModel: BaseViewModel() {
 
     fun onLoginButtonClick() {
         if (isIdentifierValid() and isPasswordValid()) {
-
+            //TODO: Navigate other fragment
+            Log.d("LoginViewModel", "Navigate to login")
         }
     }
 

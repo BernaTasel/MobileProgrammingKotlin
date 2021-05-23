@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:viewBindingIgnore="true">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/identifierInputLayout"
@@ -22,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:hint="@string/email">
+            android:hint="@string/email"
+            app:error="@{viewModel.emailErrorMessage}">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -38,13 +40,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:hint="@string/password"
-            app:endIconMode="password_toggle">
+            app:endIconMode="password_toggle"
+            app:error="@{viewModel.identifierErrorMessage}">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:text="@={viewModel.password}"/>
+                android:text="@={viewModel.password}" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
